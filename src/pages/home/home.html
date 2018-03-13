@@ -1,0 +1,42 @@
+<ion-header class="mm-header toolbar-mm">
+  <img ngClass="home-bg" src="assets/imgs/home-bg.jpeg"/>
+  <ion-toolbar>
+  <button class="header-btn" ion-button menuToggle>
+    <ion-icon name="ios-menu-outline"></ion-icon>
+  </button>
+  <ion-title>
+    Home
+  </ion-title>
+  <ion-buttons end>
+    <button class="header-btn" ion-button (click)="doClick()">
+      <ion-icon name="ios-more-outline"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-row ngClass="home-greet-container">
+  <ion-col col-12>
+    <label ngClass="home-salam">اَلسَّلاَ مُ عَلَيْكُمْ</label>
+  </ion-col>
+  <ion-col col-12>
+    <label ngClass="home-greet">Brother, sister fulan.</label>
+  </ion-col>
+  <ion-searchbar placeholder="Search mosque"></ion-searchbar>
+</ion-row>
+</ion-header>
+
+<ion-content class="body-style">
+  <ion-row ngClass="card-container">
+  <ion-card ngClass="main-card">
+    <img src="assets/imgs/cbj-mosque.jpg" ngClass="card-bg"/>
+    <label ngClass="home-card-title">Masjid Raja Fi Sabilillah</label>
+    <ion-row ngClass="view-more-container" (click)="mosquetabsPage()">
+    <div ngClass="view-more">
+      visit
+    </div>
+      <span ngClass="home-arrow-card">
+        <ion-icon name="ios-arrow-round-forward"></ion-icon>
+      </span>
+    </ion-row>
+  </ion-card>
+</ion-row>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-content no-padding ngClass="login-body no-scroll">
+  <img ngClass="login-bg" src="assets/imgs/login-bg.jpeg"/>
+  <ion-row ngClass="login-container">
+    <div ngClass="login-round-container"><div ngClass="login-round-3"><div ngClass="login-round-2"><div ngClass="login-round-1"><div ngClass="login-logo"><img src="assets/icon/maimasjid-logo.png"/></div></div></div></div></div>
+  </ion-row>
+  <ion-row ngClass="margin-u-d-sm">
+    <div ngClass="title-text">Welcome and may Allah bless you.</div>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+<ion-row ngClass="login-radio no-margin">
+  <ion-list ngClass="lang-container no-margin">
+    <ion-item>
+      <ion-label color="primary" floating>Usename</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Password</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-row>
+  <ion-buttons>
+    <button class="button button-primary" (click)="homePage()">Sign In</button>
+  </ion-buttons>
+  <ion-item ngClass="signup-container no-margin">
+    <ion-label color="primary">Don't have any account yet? <a (click)="registerPage()">Sign up</a></ion-label>
+  </ion-item>
+</ion-footer>

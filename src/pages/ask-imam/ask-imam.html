@@ -1,0 +1,62 @@
+<ion-header class="toolbar-mm">
+  <ion-toolbar>
+  <button class="header-btn" ion-button menuToggle>
+    <ion-icon name="ios-menu-outline"></ion-icon>
+  </button>
+  <ion-title>
+    Ask Imam
+  </ion-title>
+  <ion-buttons end>
+    <button class="header-btn" ion-button>
+      <ion-icon ngClass="header-icon" name="ios-search-outline"></ion-icon>
+    </button>
+    <button class="header-btn" ion-button (click)="homePage()">
+      <ion-icon ngClass="header-icon" name="md-home"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item ngClass="ask-list">
+    <ion-row>
+        <label ngClass="feed-title">Haji & Umrah</label>
+    </ion-row>
+    <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-item>
+  <ion-item ngClass="ask-list">
+    <ion-row>
+        <label ngClass="feed-title">Fasting</label>
+    </ion-row>
+    <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-item>
+    <ion-item ngClass="ask-list">
+      <ion-row>
+          <label ngClass="feed-title">Food & Drink</label>
+      </ion-row>
+      <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+    </ion-item>
+      <ion-item ngClass="ask-list">
+        <ion-row>
+            <label ngClass="feed-title">Money</label>
+        </ion-row>
+        <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+      </ion-item>
+      <ion-item ngClass="ask-list">
+        <ion-row>
+            <label ngClass="feed-title">Marriage & Divorce</label>
+        </ion-row>
+        <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+      </ion-item>
+        <ion-item ngClass="ask-list">
+          <ion-row>
+              <label ngClass="feed-title">General</label>
+          </ion-row>
+          <ion-icon ngClass="ask-arrow" name="ios-arrow-round-forward"></ion-icon>
+        </ion-item>
+</ion-list>
+<ion-fab>
+   <button ion-fab ngClass="add-ask"><ion-icon name="add"></ion-icon></button>
+ </ion-fab>
+</ion-content>

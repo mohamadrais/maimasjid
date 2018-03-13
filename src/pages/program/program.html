@@ -1,0 +1,51 @@
+<ion-header class="toolbar-mm">
+  <ion-toolbar>
+  <button class="header-btn" ion-button menuToggle>
+    <ion-icon name="ios-menu-outline"></ion-icon>
+  </button>
+  <ion-title>
+    Programs
+  </ion-title>
+  <ion-buttons end>
+    <button class="header-btn" ion-button>
+      <ion-icon ngClass="header-icon" name="ios-search-outline"></ion-icon>
+    </button>
+    <button class="header-btn" ion-button (click)="homePage()">
+      <ion-icon ngClass="header-icon" name="md-home"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item ngClass="feed-list" no-padding (click)="programdetailsPage()">
+      <ion-row>
+      <ion-col col-3 ngClass="center-text">
+        <label ngClass="feed-title">Today</label>
+      </ion-col>
+      <ion-col col-9>
+      <ion-row ngClass="feed-container">
+          <div ngClass="feed-title">Fatwa Semasa</div>
+          <div ngClass="feed-desc">Masjid Haji Fi Sabilillah</div>
+      </ion-row>
+    </ion-col>
+    <ion-icon ngClass="prog-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-row>
+    </ion-item>
+    <ion-item ngClass="feed-list" no-padding (click)="programdetailsPage()">
+      <ion-row>
+      <ion-col col-3 ngClass="center-text">
+        <label ngClass="feed-title">23 Feb</label>
+      </ion-col>
+      <ion-col col-9>
+      <ion-row ngClass="feed-container">
+          <div ngClass="feed-title">Tazkirah & Khatib Jumaat</div>
+          <div ngClass="feed-desc">Masjid Haji Fi Sabilillah</div>
+      </ion-row>
+    </ion-col>
+    <ion-icon ngClass="prog-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

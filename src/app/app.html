@@ -1,0 +1,37 @@
+<ion-menu [content]="content">
+
+  <ion-content padding class="menu-content">
+    <img src="assets/imgs/menu-bg.jpg" ngClass="menu-bg"/>
+    <div ngClass="menu-header-container">
+      <ion-icon start name="ios-close-outline" style=""></ion-icon>
+      <img end src="assets/icon/menu-header.png" ngClass="menu-logo" style=""/>
+    </div>
+    <ion-header class="menu-header" style="">
+    </ion-header>
+
+    <ion-list ngClass="menu-list">
+      <ion-item>
+        <div>Profile</div>
+      </ion-item>
+      <ion-item>
+        <div>Settings</div>
+      </ion-item>
+      <ion-item>
+        <div>Contact Us</div>
+      </ion-item>
+      <ion-item>
+        <div>Support</div>
+      </ion-item>
+      <ion-item>
+        <div>About</div>
+      </ion-item>
+      <ion-item>
+        <div>Log Out</div>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

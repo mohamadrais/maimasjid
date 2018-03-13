@@ -1,0 +1,44 @@
+<ion-header class="toolbar-mm">
+  <ion-toolbar>
+  <button class="header-btn" ion-button menuToggle>
+    <ion-icon name="ios-menu-outline"></ion-icon>
+  </button>
+  <ion-title>
+    Infaq
+  </ion-title>
+  <ion-buttons end>
+    <button class="header-btn" ion-button>
+      <ion-icon ngClass="header-icon" name="ios-search-outline"></ion-icon>
+    </button>
+    <button class="header-btn" ion-button (click)="homePage()">
+      <ion-icon ngClass="header-icon" name="md-home"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item ngClass="feed-list" (click)="infaqdetailsPage()">
+    <ion-row>
+        <div ngClass="feed-title">Masjid Renovation</div>
+        <div ngClass="feed-desc">Help to contribute to our mosque renovation.</div>
+    </ion-row>
+    <ion-icon ngClass="feed-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-item>
+  <ion-item ngClass="feed-list" (click)="infaqdetailsPage()">
+    <ion-row>
+        <div ngClass="feed-title">Sadaqa</div>
+        <div ngClass="feed-desc">General donation that can be used for any goods.</div>
+    </ion-row>
+    <ion-icon ngClass="feed-arrow" name="ios-arrow-round-forward"></ion-icon>
+  </ion-item>
+    <ion-item ngClass="feed-list" (click)="infaqdetailsPage()">
+      <ion-row>
+          <div ngClass="feed-title">Hifz School Donation</div>
+          <div ngClass="feed-desc">Help hifz students with their needs.</div>
+      </ion-row>
+      <ion-icon ngClass="feed-arrow" name="ios-arrow-round-forward"></ion-icon>
+    </ion-item>
+</ion-list>
+</ion-content>

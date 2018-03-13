@@ -1,0 +1,28 @@
+<ion-content no-padding ngClass="login-body no-scroll">
+  <img ngClass="login-bg" src="assets/imgs/login-bg.jpeg"/>
+  <ion-row ngClass="login-container">
+    <div ngClass="login-round-container"><div ngClass="login-round-3"><div ngClass="login-round-2"><div ngClass="login-round-1"><div ngClass="login-logo"><img src="assets/icon/maimasjid-logo.png"/></div></div></div></div></div>
+  </ion-row>
+  <ion-row ngClass="margin-u-d">
+    <div ngClass="title-text">Assalamualaikum.</div>
+  </ion-row>
+
+  <ion-row ngClass="login-radio">
+    <ion-list radio-group ngClass="lang-container">
+      <ion-item class="item item-block item-ios item-radio">
+        <ion-label>Bahasa Melayu</ion-label>
+        <ion-radio value="bm" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>English</ion-label>
+        <ion-radio value="en"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-buttons>
+    <button (click)="loginPage()" class="button button-primary">Next</button>
+  </ion-buttons>
+</ion-footer>

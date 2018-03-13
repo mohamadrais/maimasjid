@@ -1,0 +1,540 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+/*Override Ionic*/
+.no-margin{
+  margin: 0 !important;
+}
+.back-button-icon-md{
+  color: #fff;
+}
+.toolbar-title-md{
+  color: #fff;
+  font-weight: 300;
+}
+.toolbar-background-md{
+  background: #00A79D;
+}
+/*General*/
+.center-text{
+  text-align: center;
+}
+.header-icon{
+  font-size: 2.5rem;
+  opacity: 0.7;
+}
+.card-container{
+  padding: 1rem;
+}
+.main-card{
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: #6563A4;
+}
+.main-card:before{
+  content: "";
+  background-image: url("../assets/imgs/cbj-mosque.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+}
+.body-style{
+  background: #f6f6f6;
+  padding: 0 1rem;
+}
+.header-btn{
+  color: #fff;
+}
+.mm-header{
+  background: #00A79D;
+  color: #fff;
+}
+.toolbar-mm{
+  max-height: 250px !important;
+  height: auto;
+}
+.button-primary{
+  width: 100%;
+  background: #6563A4;
+  color: #fff;
+  height: 60px;
+  font-size: 1.5rem;
+}
+.button-disable{
+  width: 100%;
+  background: #B6B5C3;
+  color: #E7E7E7;
+  height: 60px;
+  font-size: 1.5rem;
+}
+.button-secondary{
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  opacity: 0.5;
+}
+.coming-soon{
+  font-size: 1rem;
+}
+.title-text{
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+.select-container{
+  background: #fff;
+  opacity: 0.5;
+  width: 100%;
+  height: 50px;
+}
+.margin-u-d{
+  margin: 50px 0;
+}
+.margin-u-d-sm{
+  margin: 30px 0;
+}
+.margin-u-sm{
+  margin: 30px 0 0;
+}
+.card-bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100%; */
+  height: 130px;
+  opacity: 0.2;
+  width: 95%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: 1rem;
+}
+.feed-title{
+  font-size: 1.8rem;
+  font-weight: 400;
+  word-break: break-word;
+  white-space: normal;
+  width: 100%;
+}
+.feed-desc{
+  font-size: 1rem;
+  font-weight: 100;
+  color: #9B9B9B;
+  word-break: break-word;
+  white-space: normal;
+}
+.feed-arrow{
+  font-size: 3rem;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.feed-list{
+  height: 90px;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #dedede;
+}
+.feed-list ion-item{
+  border-bottom: 0;
+}
+.feed-container{
+  width: 215px;
+}
+.tabs-icon{
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  width: 100%;
+  z-index: 1;
+}
+.prog-arrow{
+  font-size: 3rem;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.add-ask{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+.ask-list{
+  height: 70px;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #dedede;
+}
+.ask-arrow{
+  font-size: 3rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+/*Menu*/
+.menu-content{
+  background: linear-gradient(#00A79D, #6563A4);
+}
+.menu-bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  height: -webkit-fill-available;
+  opacity: 0.06;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.menu-logo{
+  width: 110px;
+  height: auto;
+  margin-top:10px;
+  margin: auto;
+  display: block;
+}
+.menu-header{
+  z-index: -1;
+  height: 56px;
+  background: #333;
+  opacity: 0.4;
+  padding: 10px;
+}
+.menu-header-container{
+  z-index: 1;
+}
+.menu-header-container ion-icon{
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 100;
+  position: absolute;
+  opacity: 0.6;
+}
+.menu-list{
+  margin-top: 40px;
+}
+.menu-list ion-item{
+  text-align: center;
+  background: none;
+  color: #fff;
+  font-weight: 100;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+/*Details Page*/
+.details-name-container{
+  text-align: left;
+  margin-top: 2rem;
+}
+.details-name{
+  font-size: 2.5rem;
+  font-weight: 100;
+  width: 300px;
+}
+.prog-container{
+  text-align: left;
+  width: 100%;
+  margin-top: 1rem;
+}
+.prog-label{
+  font-size: 1.2rem;
+  width: 100%
+}
+.prog-text{
+  font-size: 2rem;
+  font-weight: 400;
+  width: 100%
+}
+/*Mosque Profile*/
+.mosque-label{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mosque-name-container{
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.mosque-district{
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.mosque-address{
+  width: 200px;
+  font-weight: 100;
+}
+.mosque-address.wrap{
+  width: 250px;
+  word-break: break-word;
+  white-space: normal;
+}
+.mosque-about{
+  word-break: break-word;
+  white-space: normal;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.dp-container{
+  margin: auto;
+  max-width: 500px;
+}
+.mosque-dp{
+  width: 70px;
+	height: 70px;
+	background: #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  position: absolute;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  background-image: url("../assets/imgs/cbj-dp.jpg");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mosque-dp-big{
+  width: 100px;
+	height: 100px;
+  margin: auto;
+	background: #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  background-image: url("../assets/imgs/cbj-dp.jpg");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mosque-name{
+  font-size: 2.5rem;
+  font-weight: 100;
+  width: 200px;
+}
+.mosque-header{
+  height: 300px;
+  background: #6563A4;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: block;
+  position: relative;
+}
+.header-bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  height: -webkit-fill-available;
+  opacity: 0.2;
+  transform: scale(1.5);
+  width: 100%;
+  left: 0;
+  top: 25px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+/*Login Page*/
+.login-bg{
+  opacity: 0.1;
+  position: absolute;
+  transform: scale(1.7);
+  right: 20%;
+}
+.login-radio{
+  margin-top: 20px;
+}
+.login-container{
+  padding: 100px 0 0px;
+}
+.lang-container{
+  width: 100%;
+  opacity: 0.7;
+}
+.signup-container{
+  width: 100%;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 60px;
+  color: #323232;
+}
+.signup-container a{
+  text-decoration: underline;
+}
+.login-logo{
+  width: 100px;
+	height: 100px;
+	background: #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+.login-round-container{
+  margin: auto;
+}
+.login-round-3{
+  width: 160px;
+	height: 160px;
+	background: none;
+  border: 1px solid #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 80px;
+  display: block;
+  margin: auto;
+}
+.login-round-2{
+  width: 140px;
+	height: 140px;
+  background: none;
+  border: 1px solid #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 70px;
+  display: block;
+  margin: auto;
+  margin-top: 8px
+}
+.login-round-1{
+  width: 120px;
+	height: 120px;
+  background: none;
+  border: 1px solid #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 60px;
+  display: block;
+  margin: auto;
+  margin-top: 8px
+}
+.login-logo img{
+  width: 55%;
+  margin: auto;
+  display: block;
+  margin-top: 9px;
+  padding-top: 10px;
+}
+.login-body{
+  background: #00A79D;
+}
+
+/*Home Page*/
+.view-more{
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin: 0.5rem 1rem;
+  position: absolute;
+  right: 45px;
+  color: #fff;
+}
+.view-more-container{
+  height: 35px;
+}
+.home-more{
+
+}
+.home-arrow-card{
+  font-size: 2.2em;
+  position: absolute;
+  right: 25px;
+  color: #fff;
+}
+.home-card-title{
+  font-size: 3rem;
+  font-weight: 100;
+  margin-right: 60%;
+  color: #fff;
+}
+.home-greet-container{
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.home-greet{
+  font-size: 1.2rem;
+}
+.home-salam{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.home-bg{
+  background-image: url(..assets/imgs/home-bg.jpeg);
+  opacity: 0.1;
+  position: absolute;
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+  right: -20%;
+  top: -34%;
+  z-index: 99;
+  height: auto;
+  max-height: 225px;
+  width: 100%;
+}
+
+/*------------iPad 1 2 mini air--------------*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .home-bg{
+    background-image: url(..assets/imgs/home-bg.jpeg);
+    opacity: 0.1;
+    position: absolute;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    right: 0%;
+    top: -74%;
+    z-index: 99;
+    height: auto;
+    max-height: 380px;
+  }
+  .card-bg{
+    display: none;
+  }
+}
+/*------------iPad Pro--------------*/
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .home-bg{
+    background-image: url(..assets/imgs/home-bg.jpeg);
+    opacity: 0.1;
+    position: absolute;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    right: 0%;
+    top: -118%;
+    z-index: 99;
+    height: auto;
+    max-height: 480px;
+  }
+  .card-bg{
+    display: none;
+  }
+}
